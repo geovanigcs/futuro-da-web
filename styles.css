@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+.w {
+    font-size: 35px;
+    font-weight: bold;
+    font-family:geo;
+    
+}
+li{
+    list-style: none;
+}
+h2{font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 100px;
+
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    padding: 0 100px;
+    
+}
+nav{
+    display: flex;
+    gap: 30px;
+}
+
