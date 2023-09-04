@@ -92,6 +92,7 @@ li {
 
 button {
     border: none;
+    font-weight: 600;
     outline: none;
     color: #fff;
     padding: 14px 25px;
@@ -117,8 +118,10 @@ section {
     margin-top: 20px;
 }
 
+
 section img {
     width: 100px;
+    margin: 10px;
 }
 
 section .embaixo01 {
@@ -137,15 +140,134 @@ section h4:hover {
     color: hsl(236, 13%, 42%);
     opacity: 0.5;
     font-size: 40px;
-    margin: 0;
     margin-bottom: 10px;
 }
 
 .card h4 {
-    margin: 0;
+    margin: 515;
     line-height: 30px;
 }
 
 .fundo {
     display: flex;
+}
+
+@media (min-width: 961px) {
+    .fundo {
+        display: flex;
+    }
+}
+
+@media (max-width: 960px) {
+    .close {
+        display: block;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .fundo {
+        display: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    nav {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .tudao {
+        display: block;
+    }
+
+    section.embaixo {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .baixoi {
+        display: block;
+    }
+
+    .ladod {
+        margin: 0;
+    }
+
+    main {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    section .embaixo01 {
+        width: 300px;
+    }
+
+    .futuro {
+        font-size: 20px;
+    }
+
+    .futuro h1 {
+        font-size: 30px;
+    }
+
+    .separar {
+        width: 100%;
+    }
+
+    .pulo {
+        display: none;
+    }
+
+    button {
+        margin-bottom: 10px;
+        width: 60%;
+    }
+
+    .dladod {
+        margin-left: 20px;
+    }
+
+    .close {
+        width: 30px;
+        text-align: right;
+    }
+
+    .lista {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+        position: absolute;
+        top: -15px;
+        right: 0;
+        opacity: 1;
+        background-color: #fff;
+        padding: 20px;
+        color: hsl(240, 100%, 5%);
+    }
+
+    .menu {
+        display: block;
+        object-fit: contain;
+        margin-right: 40px;
+        width: 50px;
+    }
+
+    .lista {
+        margin: 20px;
+    }
+
+
+    .fundo.show {
+        display: block;
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        background: #0b0b13ab;
+    }
 }

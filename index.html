@@ -15,24 +15,24 @@
             <img src="logo.svg" alt="Logo" class="logo">
             <img src="icon-menu.svg" class="menu">
             <div class="fundo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">New</a></li>
-                    <li><a href="#">Popular</a></li>
-                    <li><a href="#">Trending</a></li>
-                    <li><a href="#">Categories</a></li>
+                <ul class="lista">
+                    <li><a href="lista">Home</a></li>
+                    <li><a href="lista">New</a></li>
+                    <li><a href="lista">Popular</a></li>
+                    <li><a href="lista">Trending</a></li>
+                    <li><a href="lista">Categories</a></li>
                     <img src="icon-menu-close.svg" alt="x" class="close">
                 </ul>
             </div>
         </nav>
         <div class="tudao">
-            <div class="hero-content">
+            <div>
                 <img src="TESTE 1.jpg" alt="formas geometrica">
                 <div class="baixoi">
                     <div class="futuro">
                         <h1>
                             The Bright<br>
-                            Future of <br>
+                            Future of <br class="pulo">
                             Web 3.0?
                         </h1>
                     </div>
@@ -43,7 +43,7 @@
                             the power of the platforms back into the hands of the people.
                             But is it really fulfilling its promise?
                         </p>
-                        <button>Read more</button>
+                        <button>READ MORE</button>
                     </div>
                 </div>
             </div>
@@ -103,6 +103,20 @@
             </div>
         </section>
     </main>
+    <script>
+        let close = document.querySelector(".close");
+        let menu = document.querySelector(".menu");
+        let novo = document.querySelector(".fundo");
+        close.addEventListener("click", (e) => {
+            document.body.classList.remove("fechar");
+            novo.style.display = "none";
+        });
+        menu.addEventListener("click", (e) => {
+            document.body.classList.add("fechar");
+            novo.style.display = "block";
+            novo.classList.add("show");
+        });
+    </script>
 </body>
 
 </html>
