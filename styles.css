@@ -1,42 +1,121 @@
-* {
-    margin: 0;
+* {margin: 0;
     padding: 0 100;
-    font-family: 'Inter', sans-serif;
-    
+    font-family: 'Inter', sans-serif;}
+html{font-size: 15px;}
+body{max-width: 1000px;
+margin: auto;}
+img{padding: 0 100px;
+max-width: 100%;
+width: 100%;}
+a{color: RGBA(0,0,5,0.7);
+text-decoration: none;}
+a:hover{color: red;}
+li{list-style: none;}
+h1{font-size: 45px;
+padding: 0 100px;
+align-items: self-start;}
+p {
+    line-height: 1.8;
+    color: hsl(236, 13%, 42%);
 }
-body{
-    font-family: ;
+header{display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1.25rem;}
+nav{display: flex;
+gap: 30px;}
+.view{
+    padding: 1.25rem;
+    padding-top: 0;
 }
-img{
-    padding: 0 100px;
+.view h1 {
+    color: hsl(240, 100%, 5%);
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 1rem 0;
 }
-.logo {font-weight: 900;
-    font-size: 50px;
-    font-family: times;
+.read-more:first-child p{
+margin-bottom: 1rem;}
+.view >div:last-child h3{
+    color: #fff;
+    margin-bottom: 0.5rem;
 }
-a{color: rgba(0, 0, 5, 0.7);
-    text-decoration: none;
+.view >div:last-child {
+    background: hsl(240, 100%, 5%);
+    margin-top: 2rem;
+    padding: 1.25rem 1.25rem 0;
 }
-a:hover{
-    color: red;
+.view > div:last-child h2 {
+    color: hsl(35, 77%, 62%);
 }
-li{    list-style: none;
+.view >div:last-child article{
+    padding: 1.25rem;
 }
-h2{font-size: 45px;
-       padding: 0 100px;
-       font-weight: 900;
+.view >div:last-child article:not(:last-child){
+    border-bottom: 1px solid hsl(236, 13%, 42%);
 }
-header{
+.ladod article img{
+    width: 150px;
+}
+.ladod {
+    padding: 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
+}
+.ladod article {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 120px;
-    padding: 0 100px;
-    
+    gap: 1.25rem;
 }
-nav{
-    display: flex;
-    gap: 30px;
+.ladod article span {
+    color: hsl(236, 13%, 42%);
+    font-weight: bold;
+    font-size: 2rem;
+    opacity: 75%;
 }
-p {padding: 0 100px;
+.ladod article h4{
+    font-size: 1.25rem;
+    color: hsl(240, 100%, 5%);
+}
+.read-more {color: white;
+    background-color: hsl(5, 85%, 63%);
+    padding: 0.8rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+}
+.read-more:hover{
+    background: hsl(240, 100%, 5%);
+}
+header img {
+    padding: 0;
+}
+@media (min-width: 1024px) {
+    body {
+        max-width: 1000px;
+    margin: aut;}
+    .view {
+        display: flex;
+        gap: 2 rem;
+    }
+    .view h1 {
+        font-size: 3rem;
+    }
+    .view div:first-child {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        place-items: center;
+        margin-top: 2rem;
+    }
+    .view > div:last-child {
+        margin-top: 0;
+    }
+    .ladod {
+        display: grid;
+        grid-template-columns: repeat(3. 1fr);
+    }
 }
